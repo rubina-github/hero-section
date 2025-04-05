@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0f0f0f;
+    font-family: 'Arial ', sans-serif;
+    overflow-x: hidden;
+    color: white;
+  }
+   .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #111;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16px;
+    position: relative;
+    transition: 0.5s;
+  }
+  .hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    text-align: center;
+    overflow: hidden;
+  }  
+  .side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .image-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  .hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+  }
+  .hero-text {
+    max-width: 500px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  .image-box:hover .hover-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    cursor: default;
+  }
+  .hero-text h1:hover {
+    color: #00ffe7;           
+    letter-spacing: 2px;     
+    transform: scale(1.05);   
+    text-shadow: 0 0 10px #00ffe7; 
+  }
+ 
+  
+
+    
